@@ -13,10 +13,12 @@
     pkgsFor = nixpkgs.legacyPackages;
   in {
     packages = forAllSystems (system: {
-      regex = pkgsFor.${system}.callPackage ./nu_plugin_regex {};
+      regex     = pkgsFor.${system}.callPackage ./nu_plugin_regex {};
+      clipboard = pkgsFor.${system}.callPackage ./nu_plugin_clipboard {};
     });
     devShells = forAllSystems (system: {
-      regex = pkgsFor.${system}.callPackage ./nu_plugin_regex/shell.nix {};
+      regex     = pkgsFor.${system}.callPackage ./nu_plugin_regex/shell.nix {};
+      clipboard = pkgsFor.${system}.callPackage ./nu_plugin_clipboard/shell.nix {};
     });
   };
 }
