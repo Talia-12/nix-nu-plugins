@@ -15,10 +15,12 @@
     packages = forAllSystems (system: {
       regex     = pkgsFor.${system}.callPackage ./nu_plugin_regex {};
       clipboard = pkgsFor.${system}.callPackage ./nu_plugin_clipboard {};
+      dbus      = pkgsFor.${system}.callPackage ./nu_plugin_dbus {};
     });
     devShells = forAllSystems (system: {
       regex     = pkgsFor.${system}.callPackage ./nu_plugin_regex/shell.nix {};
       clipboard = pkgsFor.${system}.callPackage ./nu_plugin_clipboard/shell.nix {};
+      dbus      = pkgsFor.${system}.callPackage ./nu_plugin_dbus/shell.nix {};
     });
   };
 }
