@@ -13,10 +13,10 @@
     pkgsFor = nixpkgs.legacyPackages;
   in {
     packages = forAllSystems (system: {
-      default = pkgsFor.${system}.callPackage ./. {};
+      regex = pkgsFor.${system}.callPackage ./nu_plugin_regex {};
     });
     devShells = forAllSystems (system: {
-      default = pkgsFor.${system}.callPackage ./shell.nix {};
+      regex = pkgsFor.${system}.callPackage ./nu_plugin_regex/shell.nix {};
     });
   };
 }
