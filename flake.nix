@@ -14,9 +14,11 @@
   in {
     packages = forAllSystems (system: {
       regex = pkgsFor.${system}.callPackage ./nu_plugin_regex {};
+      dialog = pkgsFor.${system}.callPackage ./nu_plugin_dialog {};
     });
     devShells = forAllSystems (system: {
       regex = pkgsFor.${system}.callPackage ./nu_plugin_regex/shell.nix {};
+      dialog = pkgsFor.${system}.callPackage ./nu_plugin_dialog/shell.nix {};
     });
   };
 }
