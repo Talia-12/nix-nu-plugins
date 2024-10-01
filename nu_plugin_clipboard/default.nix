@@ -19,6 +19,7 @@ in rustPlatform.buildRustPackage {
 
   meta = {
     description = "A nushell plugin to interface with the clipboard.";
+    mainProgram = "nu_plugin_clipboard";
     homepage = "https://github.com/${owner}/${pname}";
     license = lib.licenses.mit;
     maintainers = [];

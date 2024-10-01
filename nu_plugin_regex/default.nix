@@ -31,6 +31,7 @@ in rustPlatform.buildRustPackage {
   
   meta = {
     description = "A nushell plugin to parse regular expressions.";
+    mainProgram = "nu_plugin_regex";
     homepage = "https://github.com/${owner}/${pname}";
     license = lib.licenses.mit;
     maintainers = [];

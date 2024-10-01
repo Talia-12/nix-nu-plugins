@@ -28,6 +28,7 @@ in rustPlatform.buildRustPackage {
 
   meta = {
     description = "A nushell plugin to interface with DBus.";
+    mainProgram = "nu_plugin_dbus";
     homepage = "https://github.com/${owner}/${pname}";
     license = lib.licenses.mit;
     maintainers = [];
