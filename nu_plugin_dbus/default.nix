@@ -5,7 +5,7 @@
 }: let
   owner = "devyn";
   pname = "nu_plugin_dbus";
-  version = "eabf21dd6fa9aeef4dca4d316deb30d96fea90fc";
+  version = "0.11.0";
 in rustPlatform.buildRustPackage {
   inherit pname version;
   
@@ -13,10 +13,10 @@ in rustPlatform.buildRustPackage {
     inherit owner;
     repo = pname;
     rev = version;
-    hash = "sha256-XVLX0tCgpf5Vfr00kbQZPWMolzHpkMVYKoBHYylpz48=";
+    hash = "sha256-pOgPlvsE8h/WtvLMcLz34hNlZQf60CCAavi+isV2jnU=";
   };
 
-  cargoHash = "sha256-KIVZ74Fkj7qGRoetN9rOdx/ByqhmG9qKTnvFdfKctoM=";
+  cargoHash = "sha256-HoJDKqFO2kwCRl2+8DcovI9bIylQl3HfcAfatBIww1Q=";
 
   buildInputs = with pkgs; [
     dbus

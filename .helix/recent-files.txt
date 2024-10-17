@@ -1,0 +1,7 @@
+"/home/tyrab/Programming/nix/nix-nu-plugins/nu_plugin_regex/default.nix"
+"/home/tyrab/Programming/nix/nix-nu-plugins/nu_plugin_regex/shell.nix"
+"/home/tyrab/Programming/nix/nix-nu-plugins/nu_plugin_dbus/default.nix"
+"/home/tyrab/Programming/nix/nix-nu-plugins/nu_plugin_clipboard/default.nix"
+"/home/tyrab/Programming/nix/nix-nu-plugins/nu_plugin_clipboard/shell.nix"
+"/home/tyrab/Programming/nix/nix-nu-plugins/flake.nix"
+"/home/tyrab/Programming/nix/nix-nu-plugins/nu_plugin_clipboard/def"

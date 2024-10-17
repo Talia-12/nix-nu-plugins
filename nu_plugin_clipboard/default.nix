@@ -4,7 +4,7 @@
 }: let
   owner = "FMotalleb";
   pname = "nu_plugin_clipboard";
-  version = "571e0b76e25f7269fdbf4f992a21030e7ea1fe27";
+  version = "0.98.0";
 in rustPlatform.buildRustPackage {
   inherit pname version;
   
@@ -12,10 +12,10 @@ in rustPlatform.buildRustPackage {
     inherit owner;
     repo = pname;
     rev = version;
-    hash = "sha256-+iZ/p24fnM5TuVY5H+OuoPj/O1YMJ1UnJt3LMpEHxL0=";
+    hash = "sha256-/Oc57JaRlKZppJ9ZEKbSHb/8kg1XqziIQhpBB2uBT7c=";
   };
 
-  cargoHash = "sha256-CQ+D/WmHdGAkQnygjfm7DnI1k3mreuKyCwKnBqSN9r0=";
+  cargoHash = "sha256-wR1mCHB+c483m4sPBNvT+NB9kqOVs3gUigETikBgG9Y=";
 
   meta = {
     description = "A nushell plugin to interface with the clipboard.";
